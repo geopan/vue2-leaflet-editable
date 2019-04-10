@@ -1,6 +1,6 @@
 {
   "name": "vue2-leaflet-editable",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": {
     "name": "Guillaume de Boyer",
     "email": "guillaume.deboyer@droneshield.com"
@@ -16,37 +16,6 @@
   "dependencies": {
     "leaflet": "^1.3.4",
     "leaflet-editable": "^1.2.0",
-    "vue2-leaflet": "^1.0.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.2",
-    "@vue/cli-plugin-eslint": "^3.0.2",
-    "@vue/cli-plugin-unit-jest": "^3.0.4",
-    "@vue/cli-service": "^3.0.2",
-    "@vue/test-utils": "^1.0.0-beta.25",
-    "babel-core": "^6.26.3",
-    "babel-jest": "^23.6.0",
-    "babel-plugin-transform-imports": "^1.5.1",
-    "jest": "^23.6.0",
-    "vue-cli-plugin-test": "^1.0.2",
-    "vue-template-compiler": "^2.5.17",
-    "webpack-node-externals": "^1.7.2"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "files": [
-    "dist/*"
-  ]
+    "vue2-leaflet": "^2.0.3"
+  }
 }
