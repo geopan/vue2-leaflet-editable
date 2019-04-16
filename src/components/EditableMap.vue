@@ -99,6 +99,7 @@ export default {
     L.DomEvent.on(this.mapObject, this.$listeners);
     propsBinder(this, this.mapObject, props);
     this.ready = true;
+    this.$emit("mapready");
   }
 };
 </script>
