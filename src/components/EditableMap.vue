@@ -1,6 +1,6 @@
 <template>
   <div class="vue2leaflet-map">
-    <slot v-if="ready"/>
+    <slot v-if="ready" />
   </div>
 </template>
 

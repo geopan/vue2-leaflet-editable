@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "leaflet": "^1.5.1",
+    "leaflet": "^1.6.0",
     "leaflet.icon.glyph": "^0.2.1",
     "vue": "^2.6.10",
-    "vue2-leaflet": "^2.1.1"
+    "vue2-leaflet": "^2.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
