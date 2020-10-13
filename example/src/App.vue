@@ -11,6 +11,11 @@
         :editable="editMode['polygon']"
         :lat-lngs="polygon"
       />
+      <editable-rectangle 
+        @click="editMode['rectangle'] = !editMode['rectangle']"
+        :editable="editMode['rectangle']"
+        :bounds="rectangle"
+      />
       <editable-polyline
         :editable="editMode['polyline']"
         @click="editMode['polyline'] = !editMode['polyline']"
@@ -27,6 +32,7 @@ import { LTileLayer } from "vue2-leaflet";
 import {
   EditableMap,
   EditablePolygon,
+  EditableRectangle,
   EditablePolyline
 } from "../../src/components";
 
@@ -36,10 +42,12 @@ export default {
     LTileLayer,
     EditableMap,
     EditablePolygon,
+    EditableRectangle,
     EditablePolyline
   },
   data: () => ({
     editMode: {
+      rectangle: false,
       polygon: false,
       polyline: false
     },
@@ -53,6 +61,10 @@ export default {
       latLng(-33.86, 151.2093),
       latLng(-33.86, 151.215),
       latLng(-33.8688, 151.215)
+    ],
+    rectangle: [
+      latLng(-33.8688, 151.215),
+      latLng(-33.87, 151.218)
     ],
     polyline: [
       latLng(-33.8688, 151.2193),
